@@ -1,0 +1,417 @@
+/* Reset des marges */
+body, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps principal */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset des marges */
+body, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Header */
+header {
+    padding: 20px;
+    background: #ffffff;
+    color: #000000;
+    /*background-image: url('photos/s21.png');*/
+}
+
+.header-portfolio {
+  padding: 20px;
+  height: 15vw;
+  background: #000000;
+  color: #ffffff;
+  /*background-image: url('photos/s21.png');*/
+}
+.header-portfolio h1{
+  padding: 20px;
+  background: #000000;
+  color: #ffffff;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-left: 35vw;
+  /*background-image: url('photos/s21.png');*/
+}
+
+header h1 {
+    font-size: 6em;
+    text-align: left;
+    border: #000000;
+}
+
+.menu-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .menu-button img {
+    width: 40px; /* Taille du logo */
+    height: 40px;
+    object-fit: cover; /* Ajuste l'image pour qu'elle reste proportionnée */
+    cursor: pointer;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Cache le menu initialement */
+    width: 250px;
+    height: 40vh;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  
+  .menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+    transition: color 0.2s ease;
+  }
+  
+  .menu a:hover {
+    color: #ff5722;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('photos/points.png'); /* Remplace par ton image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+/* Sections */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 0;
+    background: #fff;
+    border: 2px solid transparent; /* Bordure par défaut : transparente */
+    transition: border 0.3s ease; /* Transition douce pour l'apparition */
+    cursor: pointer; /* Curseur en forme de main pour indiquer qu'il est cliquable */
+}
+
+
+section:hover {
+    border: 2px solid black; /* Bordure noire visible au survol */
+}
+
+.section-one {
+    position: relative; /* Permet de positionner les éléments à l'intérieur */
+  }
+  
+  .section-one .text {
+    flex: 1; /* Le texte prend tout l'espace disponible à gauche */
+    margin-right: 20px; /* Ajoute un espacement entre le texte et l'image */
+  }
+  
+  .section-one .text h2 {
+    font-size: 2rem; /* Augmente la taille du titre */
+    margin-left: 10vw; /* Supprime les marges autour du titre */
+    top: 20px; /* Place le titre en haut de la section */
+    left: 20px; /* Aligne le titre à gauche */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+  }
+  
+  .section-one .text p {
+    font-size: 1rem; /* Taille standard pour le paragraphe */
+    margin-left: 5vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    font-weight: lighter;
+  }
+  
+  .section-one .image {
+    flex-shrink: 0; /* Empêche l'image de se réduire */
+    margin-right: 7vw; /* Ajoute un espace à droite de l'image */
+  }
+  
+  .section-one .image img {
+    max-width: 25vw; /* Définit une largeur maximale pour l'image */
+    margin-right: 20px; /* Ajoute un léger espacement à droite de l'image */
+    margin-left: 5vw;
+
+}
+
+
+.section-two 
+.section-two .text {
+  margin-right: 20px; /* Ajoute un espacement entre le texte et l'image */
+}
+
+.section-two .text h2 {
+  font-size: 2rem; /* Augmente la taille du titre */
+  margin-left: 5vw; /* Supprime les marges autour du titre */
+  top: 20px; /* Place le titre en haut de la section */
+  left: 20px; /* Aligne le titre à gauche */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 300;
+}
+
+.section-two .text p {
+  font-size: 1rem; /* Taille standard pour le paragraphe */
+  margin-right: 5vw;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
+}
+
+
+.section-two .image {
+  flex-shrink: 0; /* Empêche l'image de se réduire */
+  margin-left: 3vw; /* Ajoute un espace à droite de l'image */
+}
+
+.section-two .image img {
+  max-width: 25vw; /* Définit une largeur maximale pour l'image */
+  margin-right: 20px; /* Ajoute un léger espacement à droite de l'image */
+
+}
+
+
+.section-three .gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.section-three .gallery img {
+    width: 30%;
+}
+
+.section-three .description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section-four{
+ background-color: #000000;
+ margin-top: -1vw;
+}
+
+
+.section-four .text {
+  margin-right: 20px; /* Ajoute un espacement entre le texte et l'image */
+  color: #fff;
+}
+
+.section-four .text h2 {
+  font-size: 2rem; /* Augmente la taille du titre */
+  margin-left: 10vw; /* Supprime les marges autour du titre */
+  top: 20px; /* Place le titre en haut de la section */
+  left: 20px; /* Aligne le titre à gauche */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: inherit;
+}
+
+.section-four .text p {
+  font-size: 1rem; /* Taille standard pour le paragraphe */
+  margin-right: 5vw;
+  margin-left: 5vw;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
+}
+
+
+.carousel {
+    width: 100vw; /* Largeur de la fenêtre */
+    height: 47vw; /* Hauteur fixe */
+    overflow: hidden; /* Cache les débordements */
+    position: relative;
+}
+
+/* Bande d'images */
+.carousel-track {
+    display: flex;
+    gap: 0; /* Pas d'espace entre les images */
+    animation: scroll 40s linear infinite;
+}
+
+/* Images */
+.carousel img {
+    width: 100vw; /* Chaque image remplit toute la largeur */
+    height: 27vw;
+    object-fit: cover;
+}
+
+/* Animation CSS */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.img2 img{
+  width: 45vw; /* Chaque image remplit toute la largeur */
+  height: auto;
+  margin-left: 4vw;
+  border: 6px solid #111111; /* Bordure bleue de 5px */
+  margin-top: 5vw;
+}
+ 
+.img3 img{
+  width: 45vw; /* Chaque image remplit toute la largeur */
+  height: auto;
+  margin-left: 52vw;
+  margin-top: -40vw;
+  border: 6px solid #111111;  
+}
+
+.img4 img{
+  width: 45vw; /* Chaque image remplit toute la largeur */
+  height: auto;
+  margin-left: 4vw;
+  border: 6px solid #111111; /* Bordure bleue de 5px */
+  margin-top: 1vw;
+}
+.img5 img{
+  width: 45vw; /* Chaque image remplit toute la largeur */
+  height: auto;
+  margin-left: 52vw;
+  margin-top: -35vw;
+  border: 6px solid #111111;  
+}
+
+.img6 img{
+  width: 45vw; /* Chaque image remplit toute la largeur */
+  height: auto;
+  margin-left: 4vw;
+  border: 6px solid #111111; /* Bordure bleue de 5px */
+  margin-top: 1vw;
+}
+
+.img7 img{
+  width: 45vw; /* Chaque image remplit toute la largeur */
+  height: auto;
+  margin-left: 52vw;
+  margin-top: -35vw;
+  border: 6px solid #111111;  
+}
+.img8 img{
+  width: 45vw; /* Chaque image remplit toute la largeur */
+  height: auto;
+  margin-left: 4vw;
+  border: 6px solid #111111; /* Bordure bleue de 5px */
+  margin-top: 1vw;
+}
+.img9 img{
+  width: 45vw; /* Chaque image remplit toute la largeur */
+  height: auto;
+  margin-left: 52vw;
+  margin-top: -28vw;
+  border: 6px solid #111111;  
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+  gap: 10px; /* Espacement entre les images */
+  padding: 10px;
+  margin-left: 2vw;
+}
+
+.image-grid img {
+  width: 100%; /* La largeur de l'image s'adapte à la colonne */
+  height: auto; /* Maintenir les proportions des images */
+  object-fit: cover; /* Ajuster l'image dans son conteneur si nécessaire */
+  border-radius: 5px; /* Optionnel : coins arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre autour des images */
+}
+
+.texthelp {
+    font-size: 1.1rem; /* Taille standard pour le paragraphe */
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+.txt1{
+  font-size: 0.4rem; /* Taille standard pour le paragraphe */
+  margin-right: 10vw;
+  margin-left: 45vw;
+  margin-top: 0vw;
+  color: #000;
+}
+
+.rajout-image img {
+  width: 25vw; /* La largeur de l'image s'adapte à la colonne */
+  height: 30vw; /* Maintenir les proportions des images */
+  margin-left: 5vw;
+  margin-top: 15vw;
+  object-fit: cover; /* Ajuster l'image dans son conteneur si nécessaire */
+  border-radius: 5px; /* Optionnel : coins arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre autour des images */
+
+}
+
+.carousel1 {
+  width: 100vw; /* Largeur de la fenêtre */
+  height: 47vw; /* Hauteur fixe */
+  overflow: hidden; /* Cache les débordements */
+  position: relative;
+}
+
+/* Bande d'images */
+.carousel1-track {
+  display: flex;
+  gap: 10; /* Pas d'espace entre les images */
+  animation: scroll 40s linear infinite;
+}
+
+/* Images */
+.carousel1 img {
+  width: 100vw; /* Chaque image remplit toute la largeur */
+  height: 27vw;
+  object-fit: cover;
+}
+
+/* Animation CSS */
+@keyframes scroll {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+
