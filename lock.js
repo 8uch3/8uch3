@@ -8,4 +8,14 @@ document.getElementById('submitBtn').addEventListener('click', () => {
     } else {
         alert('Access Denied. Try again.');
     }
+
+    const correctKey = 'work'; // Remplacez par la clé que vous voulez utiliser
+
+    if (accessKey === correctKey) {
+        alert('Access Granted!');
+        window.location.href = 'work.html'; // Remplacez par l'URL de la page à accéder
+    } else {
+        alert('Access Denied. Try again.');
+    }
 });
+
